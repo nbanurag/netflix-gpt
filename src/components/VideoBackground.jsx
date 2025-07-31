@@ -6,7 +6,6 @@ import { useMovieTrailer } from "../hooks/useMovieTrailer";
 export const VideoBackground = ({ movieId }) => {
   useMovieTrailer(movieId);
   const trailerVideo = useSelector(getTrailerVideo);
-console.log(trailerVideo);
 
   return (
     <div className="">
