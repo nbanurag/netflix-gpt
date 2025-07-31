@@ -9,6 +9,7 @@ import { auth } from "../utils/firebase";
 import { Header } from "./Header";
 import { addUser } from "../store/userSlice";
 import { useDispatch } from "react-redux";
+import { netflixBg } from "../utils/constants";
 
 export const Login = () => {
   const [isSigninFrom, setSigninForm] = useState(true);
@@ -30,7 +31,6 @@ export const Login = () => {
           const errorCode = error.code;
           const errorMessage = error.message;
           setError(errorMessage + errorCode);
-          console.log("Error:::", errorCode, errorMessage);
         });
     } else {
       createUserWithEmailAndPassword(auth, email, password)
@@ -53,10 +53,8 @@ export const Login = () => {
           });
         })
         .catch((error) => {
-          const errorCode = error.code;
           const errorMessage = error.message;
           setError(errorMessage);
-          console.log("Error:::", errorCode, errorMessage);
         });
     }
   };
@@ -67,7 +65,7 @@ export const Login = () => {
       <div>
         <img
           className="max-h-screen !w-screen"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/7d2359a4-434f-4efa-9ff3-e9d38a8bde7f/web/IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg"
+          src={netflixBg}
           alt="logo"
         />
       </div>
