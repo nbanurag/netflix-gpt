@@ -46,9 +46,9 @@ export const Header = () => {
         <div className="flex gap-2 text-2xl font-bold items-center text-white cursor-pointer">
           <button
             onClick={() => dispatch(toggleGptSearchView())}
-            className="!bg-purple-500 !p-2 !px-4 mr-2"
+            className="!bg-purple-500 !p-2 !px-4 mr-2 !text-[20px]"
           >
-            {gptSearchMode ? "GPT Search" : "Homepage"}
+            {gptSearchMode ? "Homepage" : "GPT Search"}
           </button>
           <img className="w-10 h-10 mt-2" src={userPhotoUrl} alt="logo" />
           <span onClick={handleSignout}>Sign Out</span>
