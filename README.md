@@ -37,7 +37,7 @@ Before running, make sure you have:
 Add them to a `.env` file:
 
 ```env
-VITE_OPENAI_KEY=your_openai_key
+VITE_OPEN_ROUTER_KEY=your_openai_key
 VITE_TMDB_KEY=your_tmdb_key
 VITE_FIREBASE_API_KEY=your_firebase_api_key
 # ...other Firebase config values
