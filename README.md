@@ -88,4 +88,4 @@ Visit `http://localhost:5173` (or your development port) to explore locally.
 
 Feel free to reach out for collaboration, feedback, or questions.
 
-**Live demo**: [link if available]
+**Live demo**: [https://netflix-gpt-blond-xi.vercel.app/]
