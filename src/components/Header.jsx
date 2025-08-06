@@ -40,7 +40,7 @@ export const Header = () => {
   }, [navigate, dispatch]);
 
   return (
-    <div className="absolute z-10 bg-gradient-to-b from-black w-full px-10 pt-4 flex justify-between">
+    <div className="absolute z-10 md:from-black w-full px-10 pt-4 flex justify-between bg-black md:bg-gradient-to-b">
       <img width="200" height="50" src={userAvtr} alt="logo" />
       {userPhotoUrl && (
         <div className="flex gap-2 text-2xl font-bold items-center text-white cursor-pointer">
