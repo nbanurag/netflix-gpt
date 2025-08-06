@@ -30,7 +30,7 @@ Before running, make sure you have:
 - Node.js and npm/yarn
 - A Firebase project with Authentication and Hosting enabled
 - API keys:
-  - `OPENAI_API_KEY`
+  - `OPEN_ROUTER_KEY`
   - `TMDB_API_KEY`
   - Firebase config variables (e.g. `FIREBASE_API_KEY`, etc.)
 
